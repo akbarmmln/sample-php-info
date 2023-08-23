@@ -10,4 +10,4 @@ USER root
 
 EXPOSE 80
 
-CMD ["start-apache"]
+CMD ["apache2-foreground"]
