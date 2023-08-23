@@ -8,6 +8,6 @@ COPY . /var/www/html/sample-php-info
 
 USER root
 
-EXPOSE 8099
+EXPOSE 80
 
 CMD ["start-apache"]
