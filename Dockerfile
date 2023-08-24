@@ -1,7 +1,7 @@
 #Pulling base php-apache image from dockerhub
 FROM php:7.4-apache
 
-RUN apt-get update && apt-get clean && apt-get install -y libmemcached-dev libssl-dev zlib1g-dev libfreetype6-dev libjpeg62-turbo-dev libpng12-dev
+RUN apt-get update && apt-get clean && apt-get install -y libmemcached-dev libssl-dev zlib1g-dev libfreetype6-dev libjpeg62-turbo-dev libmcrypt-dev
 
 ENV TZ=Asia/Jakarta
 RUN ln -snf /usr/share/zoneinfo/$TZ /etc/localtime && echo $TZ > /etc/timezone
